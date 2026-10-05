@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concord — Bug Report</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">CONCORD</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="studio.html">Studio</a></li>
+        <li><a href="community.html" aria-current="page">Community</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p><a href="community.html">&larr; Back to Community</a></p>
+
+    <h1>Bug Report: Character stuck in wall on Level 3</h1>
+    
+    <section>
+      <div class="card">
+        <h3>GlitchMaster <span style="font-weight: normal; font-size: 0.9em; color: #666;">(Original Poster)</span></h3>
+        <p>Whenever I try to dash near the eastern wall in the ruined cathedral on Level 3, my character clips through the geometry and gets stuck inside the pillar. I can't move or open the menu, and restarting the game is the only fix.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Replies (2)</h2>
+      
+      <div class="card">
+        <h3>JaneDev <span style="font-weight: normal; font-size: 0.9em; color: #0078D7;">(Developer)</span></h3>
+        <p>Thanks for reporting this! We're aware of the collision issue with the cathedral pillars. A hotfix is being tested right now and will be included in patch 1.0.4 launching later this week.</p>
+      </div>
+
+      <div class="card" style="margin-top: 1rem;">
+        <h3>PlayerTwo</h3>
+        <p>I had this happen too! A temporary workaround is to use your "Return" item if you have one equipped before you dash, it teleports you back to the checkpoint safely.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2026 Concord Studios. Fictional project for ITS123.</span>
+    <ul>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Discord</a></li>
+      <li><a href="#">Itch.io</a></li>
+    </ul>
+  </footer>
+
+  <div class="chat-bubble" onclick="document.getElementById('chat-window').classList.toggle('open')">💬</div>
+  <div class="chat-window" id="chat-window">
+    <header>Concord Community Chat</header>
+    <div class="chat-messages">
+      <p><strong>JaneDev:</strong> anyone hyped for the new patch?</p>
+      <p><strong>PixelFan22:</strong> yes!! release date when</p>
+    </div>
+    <div class="chat-input">
+      <input type="text" placeholder="Type a message... (UI only)">
+      <button type="button">Send</button>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concord — Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">CONCORD</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="studio.html" aria-current="page">Studio</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>The Studio</h1>
+    <section>
+      <h2 class="section-title">Team</h2>
+      <div class="card-grid">
+        <div class="card">
+          <img src="Aven.jpg">
+          <h3>Avenchard Wandasan L. Gala</h3>
+          <p>Role — Lead Coordinator/Designer</p>
+        </div>
+        <div class="card">
+          <img src="terre.jpg">
+          <h3>Terre, Sheherazade M.</h3>
+          <p>Role — Artist</p>
+        </div>
+        <div class="card">
+          <img src="Adrian.jpg">
+          <h3>Adrian Bryan K. Arriola</h3>
+          <p>Role — Programmer</p>
+        </div>
+        <div class="card">
+          <img src="Gian.jpg">
+          <h3>Gian Carlo B. Fernando</h3>
+          <p>Role — Designer</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Our Timeline</h2>
+      <figure class="timeline-wrap">
+        <div class="timeline-image">
+          <img src="timeline-placeholder.png" usemap="#timelineMap" alt="Studio history timeline">
+          <a class="timeline-marker" style="left: 18.75%; top: 50%;" href="#founded" aria-label="2023: Founded"></a>
+          <a class="timeline-marker" style="left: 50%; top: 50%;" href="#first-release" aria-label="2024: First Release"></a>
+          <a class="timeline-marker" style="left: 81.25%; top: 50%;" href="#flagship" aria-label="2025: Flagship Title"></a>
+        </div>
+        <map name="timelineMap">
+          <area shape="circle" coords="150,100,15" href="#founded" alt="2023: Founded">
+          <area shape="circle" coords="400,100,15" href="#first-release" alt="2024: First Release">
+          <area shape="circle" coords="650,100,15" href="#flagship" alt="2025: Flagship Title">
+        </map>
+        <figcaption>Click a point on the timeline to jump to that part of our history. <!-- (Swap this image for a real designed one when ready — just keep the three click zones roughly in place.) --></figcaption>
+      </figure>
+
+      <div id="founded" class="timeline-header"><h3>2023 — Concord was Founded</h3><p>Founded in 2023, initially by a group of 4 student developers. For a web development project in their computer science class. The team continued the project beyond the classroom, leading to the formation of Concord Studios.</p></div>
+      <div id="first-release" class="timeline-header"><h3>2024 — First Release</h3><p>Concord released its first game in 2024, a simple puzzle game. Featuring a heart navigating through a maze of obstacles and challenges that players must overcome to avoid being left heartbroken in a cold and uncaring world.</p></div>
+      <div id="flagship" class="timeline-header"><h3>2025 — Flagship Title</h3><p>Alter Ego, a psychological narrative RPG game was officially launched in December 29, 2025. Leading to the studio's first major success. Featuring a high school student as the protagonist. Facing severe-depression, he decides dive in and find solace in the digital world.</p></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2026 Concord Studios. Fictional project for ITS123.</span>
+    <ul>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Discord</a></li>
+      <li><a href="#">Itch.io</a></li>
+    </ul>
+  </footer>
+
+  <div class="chat-bubble" onclick="document.getElementById('chat-window').classList.toggle('open')">💬</div>
+  <div class="chat-window" id="chat-window">
+    <header>Concord Community Chat</header>
+    <div class="chat-messages">
+      <p><strong>JaneDev:</strong> anyone hyped for the new patch?</p>
+      <p><strong>PixelFan22:</strong> yes!! release date when</p>
+    </div>
+    <div class="chat-input">
+      <input type="text" placeholder="Type a message... (UI only)">
+      <button type="button">Send</button>
+    </div>
+  </div>
+
+</body>
+</html>

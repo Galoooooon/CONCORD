@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concord — Community</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">CONCORD</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="studio.html">Studio</a></li>
+        <li><a href="community.html" aria-current="page">Community</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Community</h1>
+    <p>Welcome to the Concord Studios community portal! Check out our latest devlogs, join the forum discussions, and sign up for our newsletter to stay updated.</p>
+
+    <section>
+      <h2 class="section-title">Devblog &amp; Announcements</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Devlog #3 — The Spire Progress</h3>
+          <p>We've finalized the core combat loop and added 5 new enemy types. Read more for a sneak peek at the boss mechanics! (October 2, 2026)</p>
+        </div>
+        <div class="card">
+          <h3>Devlog #2 — Melancholy Soundtrack</h3>
+          <p>Listen to the first three tracks from the upcoming Melancholy OST, composed by our lead sound designer. (September 15, 2026)</p>
+        </div>
+        <div class="card">
+          <h3>Devlog #1 — Welcome to Concord</h3>
+          <p>We are officially launching our new community portal. Check here for all future game updates and studio news! (August 28, 2026)</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Forum Discussions</h2>
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <div class="card">
+          <h3><a href="forum-alter-ego.html">Alter Ego - True Ending Discussion [SPOILERS]</a></h3>
+          <p>Posted by User123 | Oct 4, 2026 | 45 Replies</p>
+        </div>
+        <div class="card">
+          <h3><a href="forum-bug-report.html">Bug Report: Character stuck in wall on Level 3</a></h3>
+          <p>Posted by GlitchMaster | Oct 5, 2026 | 2 Replies</p>
+        </div>
+        <div class="card">
+          <h3><a href="forum-the-spire.html">The Spire - Theories and Speculation</a></h3>
+          <p>Posted by LoreSeeker | Oct 3, 2026 | 112 Replies</p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="forums.html" class="btn">See more discussions</a>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Newsletter Sign Up</h2>
+      <p>Get the latest devlogs and studio news delivered straight to your inbox.</p>
+      <form class="site-form" onsubmit="return false;">
+        <div>
+          <label for="newsletter-email">Email Address</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="name@email.com" required>
+        </div>
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+    </section>
+
+    <section>
+      <h2 class="section-title">Community Guidelines</h2>
+      <ul>
+        <li>Be respectful to other players and the dev team.</li>
+        <li>No spoilers outside of spoiler tags.</li>
+        <li>Bug reports go in #bug-reports, not general chat.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title">Contact Us</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Get in Touch</h3>
+          <p><strong>Email:</strong> <a href="mailto:studio@concord.com">studio@concord.com</a></p>
+		  <p><strong>Twitter:</strong> <a href="https://x.com/concordgames"> @concordGames </a></p>
+		  <p><strong>Discord:</strong> <a href="https://discord.gg/concordofficial"> Concord Official </a></p>
+		  <p><strong>itch.io:</strong> <a href="concord.itch.io"> concord.itch.io </a> </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2026 Concord Studios. Fictional project for ITS123.</span>
+    <ul>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Discord</a></li>
+      <li><a href="#">Itch.io</a></li>
+    </ul>
+  </footer>
+
+  <div class="chat-bubble" onclick="document.getElementById('chat-window').classList.toggle('open')">💬</div>
+  <div class="chat-window" id="chat-window">
+    <header>Concord Community Chat</header>
+    <div class="chat-messages">
+      <p><strong>JaneDev:</strong> anyone hyped for the new patch?</p>
+      <p><strong>PixelFan22:</strong> yes!! release date when</p>
+    </div>
+    <div class="chat-input">
+      <input type="text" placeholder="Type a message... (UI only)">
+      <button type="button">Send</button>
+    </div>
+  </div>
+
+</body>
+</html>

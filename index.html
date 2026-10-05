@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concord — Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">CONCORD</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="studio.html">Studio</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero-video">
+      <video autoplay muted loop playsinline poster="spotlight-main.png">
+        <source src="hero-bg-placeholder.mp4" type="video/mp4">
+      </video>
+
+      <div class="hero-content">
+        <h1>CONCORD</h1>
+        <a href="https://youtu.be/tPMSb7zBPD0" target="_blank" rel="noopener" class="play-btn" aria-label="Watch the trailer">▶</a>
+        <p>Watch the gameplay trailer</p>
+        <a href="games.html" class="btn">See our games</a>
+      </div>
+
+      <span class="scroll-hint">SCROLL DOWN</span>
+    </section>
+    <section class="spotlight">
+      <img src="spotlight-main.png" alt="Flagship title screenshot">
+      <div>
+        <div class="eyebrow">Flagship Title</div>
+        <h2>ALTER EGO</h2>
+        <p>A psychological story RPG following a high schooler who turns to VR to escape severe depression, only to lose themselves as the virtual world slowly consumes their reality.</p>
+        <a href="games.html" class="btn">Learn more</a>
+      </div>
+    </section>
+	
+    <section>
+      <h2 class="section-title"><a href="games.html">Games</a></h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Flagship Title</h3>
+          <p>Our newest and most anticipated release. See the full catalog for details.</p>
+        </div>
+        <div class="card">
+          <h3>Side Project</h3>
+          <p>A smaller experimental title from the team.</p>
+        </div>
+        <div class="card">
+          <h3>Coming Soon</h3>
+          <p>Something we're not ready to show yet.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title"><a href="studio.html">Studio</a></h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Who we are</h3>
+          <p>A small team of developers, artists, and writers. Meet everyone on the Studio page.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title"><a href="community.html">Community</a></h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Latest devlog</h3>
+          <p>Catch up on our most recent update and what's coming next.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2026 Concord Studios. Fictional project for ITS123.</span>
+    <ul>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Discord</a></li>
+      <li><a href="#">Itch.io</a></li>
+    </ul>
+  </footer>
+
+  <div class="chat-bubble" onclick="document.getElementById('chat-window').classList.toggle('open')">💬</div>
+  <div class="chat-window" id="chat-window">
+    <header>Concord Community Chat</header>
+    <div class="chat-messages">
+      <p><strong>JaneDev:</strong> anyone hyped for the new patch?</p>
+      <p><strong>PixelFan22:</strong> yes!! release date when</p>
+    </div>
+    <div class="chat-input">
+      <input type="text" placeholder="Type a message... (UI only)">
+      <button type="button">Send</button>
+    </div>
+  </div>
+
+</body>
+</html>

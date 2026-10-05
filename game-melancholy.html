@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concord — Melancholy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">CONCORD</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html" aria-current="page">Games</a></li>
+        <li><a href="studio.html">Studio</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p><a href="games.html">&larr; Back to all games</a></p>
+
+    <section class="game-detail">
+      <img class="poster-img" src="poster-melancholy.png" alt="Melancholy poster">
+      <div class="game-info">
+        <h1>Melancholy</h1>
+        <div class="meta">Side Project &middot; September 29, 2027</div>
+        <p>Genre: Narrative Exploration / Point-and-Click Detective RPG.</p>
+		<p>Premise: A solitary wanderer searches for small flickers of joy in a somber, decaying world. Inspired by introspective narrative games like Disco Elysium, it’s a story about finding purpose when everything else feels grey.</p>
+		<p>What You Do:</p>
+		<p>Investigate: Explore quiet, fading ruins and piece together lost memories.</p>
+		<p>Connect: Engage in deep, choice-driven conversations with broken souls.</p>
+		<p>Uncover: Find rare moments of warmth and hope hidden within the bleakness..</p>
+		<p>Why Play It:</p>
+		<p>A Linear, atmosphere-first journey focused on rich dialogue, mood, and a intimate story about healing from apathy.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Screenshots</h2>
+      <div class="screenshot-grid">
+        <img src="melancholy-shot1.png" alt="Melancholy screenshot 1">
+        <img src="melancholy-shot2.png" alt="Melancholy screenshot 2">
+        <img src="melancholy-shot3.png" alt="Melancholy screenshot 3">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2026 Concord Studios. Fictional project for ITS123.</span>
+    <ul>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Discord</a></li>
+      <li><a href="#">Itch.io</a></li>
+    </ul>
+  </footer>
+
+  <div class="chat-bubble" onclick="document.getElementById('chat-window').classList.toggle('open')">💬</div>
+  <div class="chat-window" id="chat-window">
+    <header>Concord Community Chat</header>
+    <div class="chat-messages">
+      <p><strong>JaneDev:</strong> anyone hyped for the new patch?</p>
+      <p><strong>PixelFan22:</strong> yes!! release date when</p>
+    </div>
+    <div class="chat-input">
+      <input type="text" placeholder="Type a message... (UI only)">
+      <button type="button">Send</button>
+    </div>
+  </div>
+
+</body>
+</html>
